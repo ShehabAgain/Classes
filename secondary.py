@@ -9,7 +9,8 @@ class User():
 
 
 class Reader(User):
-    def __init__(self, name, bookName):
+    def __init__(self, name, bookName,email):
+        super().__init__(email)
         self.name = name
         self.bookName = bookName
 
@@ -19,7 +20,8 @@ class Reader(User):
 
 
 class Writer(User):
-    def __init__(self, name, bookName):
+    def __init__(self, name, bookName,email):
+        super().__init__(email)
         self.name = name
         self.bookName = bookName
 
