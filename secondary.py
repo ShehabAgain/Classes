@@ -56,6 +56,6 @@ def student_project(char):
 # for char in [Speaker1, Writer1]:
 #     student_project(char)
 # print(isinstance(Speaker1, object))
-Writer1 = Writer("BO", "DQEF","KK")
-Speaker1 = Speaker('F', "FFW", 'j')
+Writer1 = Writer("John", "How to Win in Monopoly","John.Smith@gmail.com")
+Speaker1 = Speaker('George', "How to Speak in Public", 'george@gmail.com')
 print(Speaker1.email)
