@@ -1,5 +1,8 @@
 # All readers,writers, and speakers are users
 class User():
+    def __init__(self, email):
+        self.email = email
+
     def sign_in(self):
         print('logged_in')
 # creating attributes and functions for Reader
@@ -24,16 +27,33 @@ class Writer(User):
         print(f'Recently, i have been focusing on writing {self.bookName}')
 # Creating attributes and functions for speaker
 
+    def project(self):
+        print(f'{self.name}')
+
 
 class Speaker(User):
-    def __init__(self, name, presentation):
+    def __init__(self, name, presentation, email):
+        super().__init__(email)
         self.name = name
         self.presentation = presentation
 
     def speak(self):
         print(f'Today, i will be presenting {self.presentation} ')
 
+    def project(self):
+        print(f'{self.name}')
 
-Speaker1 = Speaker("Coolio", "How to sleep good")
 
-print(isinstance(Speaker1, object))
+def student_project(char):
+    char.project()
+
+
+# Speaker1 = Speaker("Coolio", "How to sleep good")
+# Writer1 = Writer("Julio", "How to sleep good")
+# student_project(Speaker1)
+# for char in [Speaker1, Writer1]:
+#     student_project(char)
+# print(isinstance(Speaker1, object))
+Writer1 = Writer("BO", "DQEF")
+Speaker1 = Speaker('F', "FFW", 'j')
+print(Speaker1.email)
