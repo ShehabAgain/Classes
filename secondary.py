@@ -9,7 +9,7 @@ class User():
 
 
 class Reader(User):
-    def __init__(self, name, bookName,email):
+    def __init__(self, name, bookName, email):
         super().__init__(email)
         self.name = name
         self.bookName = bookName
@@ -20,7 +20,7 @@ class Reader(User):
 
 
 class Writer(User):
-    def __init__(self, name, bookName,email):
+    def __init__(self, name, bookName, email):
         super().__init__(email)
         self.name = name
         self.bookName = bookName
@@ -56,6 +56,6 @@ def student_project(char):
 # for char in [Speaker1, Writer1]:
 #     student_project(char)
 # print(isinstance(Speaker1, object))
-Writer1 = Writer("John", "How to Win in Monopoly","John.Smith@gmail.com")
+Writer1 = Writer("John", "How to Win in Monopoly", "John.Smith@gmail.com")
 Speaker1 = Speaker('George', "How to Speak in Public", 'george@gmail.com')
 print(Speaker1.email)
